@@ -1,12 +1,28 @@
 /* ------------------------------
    Base Styles
 ------------------------------ */
+:root {
+    --bg: #fff;
+    --text: #333;
+    --card-bg: #fafafa;
+    --border: #eee;
+    --primary: #007acc;
+}
+
+html.dark {
+    --bg: #111;
+    --text: #ddd;
+    --card-bg: #1e1e1e;
+    --border: #2a2a2a;
+    --primary: #4ba3ff;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color: #333;
-    background-color: #fff;
+    color: var(--text);
+    background-color: var(--bg);
     line-height: 1.6;
 }
 
@@ -59,6 +75,15 @@ h1 {
     flex-wrap: wrap;
 }
 
+#themeToggle {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+    color: var(--text);
+}
+
 .category-tab {
     border: 1px solid #ccc;
     background: #fff;
@@ -70,13 +95,13 @@ h1 {
 }
 
 .category-tab:hover {
-    background: #f2f2f2;
+    background: var(--card-bg);
 }
 
 .category-tab.active {
-    background: #007acc;
+    background: var(--primary);
     color: #fff;
-    border-color: #007acc;
+    border-color: var(--primary);
 }
 
 main {
@@ -98,12 +123,12 @@ main {
 .project-card {
     width: 100%;
     max-width: 480px;
-    border: 1px solid #eee;
+    border: 1px solid var(--border);
     border-radius: 8px;
     padding: 1rem;
     margin: 0 auto;
     transition: box-shadow 0.2s ease-in-out;
-    background-color: #fafafa;
+    background-color: var(--card-bg);
 }
 
 .project-card:hover {
