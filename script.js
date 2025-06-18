@@ -86,26 +86,8 @@ function setupCategoryTabs() {
   });
 }
 
-function setupThemeToggle() {
-  const html = document.documentElement;
-  const btn = document.getElementById("themeToggle");
-  if (!btn) return;
-  // initial state
-  const saved = localStorage.getItem("theme");
-  if (saved === "dark") {
-    html.classList.add("dark");
-    btn.textContent = "☀️";
-  }
-  btn.addEventListener("click", () => {
-    html.classList.toggle("dark");
-    const isDark = html.classList.contains("dark");
-    btn.textContent = isDark ? "☀️" : "🌙";
-    localStorage.setItem("theme", isDark ? "dark" : "light");
-  });
-}
 
 // Initialize site
 renderProjects();
 setupCategoryTabs();
-setupThemeToggle();
 setYear();
