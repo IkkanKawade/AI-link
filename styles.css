@@ -72,6 +72,12 @@ h1 {
 .social-links a {
     font-size: 1.4rem;
     text-decoration: none;
+    color: #555;
+    transition: color 0.2s;
+}
+
+.social-links a:hover {
+    color: #007acc;
 }
 
 .site-title {
