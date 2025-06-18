@@ -19,6 +19,12 @@ const projects = [
     url: "https://english-article-analyzer-560580169825.us-west1.run.app/"
   },
   {
+    title: "Bi-English Article Narrator & Translator",
+    category: "ツール系",
+    description: "英文記事を読み上げ・翻訳するツール",
+    url: "https://bi-english-article-narrator-translator-560580169825.us-west1.run.app/"
+  },
+  {
     title: "Pomodoro Timer Game",
     category: "ゲーム系",
     description: "ゲーム感覚で時間管理するポモドーロタイマー",
