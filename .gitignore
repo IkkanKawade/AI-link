@@ -1,0 +1,14 @@
+# Dependency directories
+node_modules/
+
+# Build output
+public/
+dist/
+
+# System files
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
