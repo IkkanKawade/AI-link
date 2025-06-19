@@ -52,7 +52,7 @@ const projects = [
     title: "Number Guessing Game",
     category: "ゲーム系",
     description: "数字当てゲーム",
-    url: "https://github.com/IkkanKawade/number-guessing-game"
+    url: "https://ikkankawade.github.io/number-guessing-game/"
   }
 ];
 
