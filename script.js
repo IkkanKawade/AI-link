@@ -41,6 +41,12 @@ const projects = [
     category: "サイト系",
     description: "ポートフォリオ兼ブログサイト",
     url: "https://www.ikkan-ai.com/"
+  },
+  {
+    title: "Nomad Morning LP",
+    category: "サイト系",
+    description: "海外ノマド・フリーランスのための朝活コミュニティ LP",
+    url: "https://nomad-morning-lp.windsurf.build/"
   }
 ];
 
