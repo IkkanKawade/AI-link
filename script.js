@@ -47,6 +47,12 @@ const projects = [
     category: "サイト系",
     description: "海外ノマド・フリーランスのための朝活コミュニティ LP",
     url: "https://nomad-morning-lp.windsurf.build/"
+  },
+  {
+    title: "Number Guessing Game",
+    category: "ゲーム系",
+    description: "数字当てゲーム",
+    url: "https://github.com/IkkanKawade/number-guessing-game"
   }
 ];
 
