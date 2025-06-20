@@ -181,26 +181,33 @@ main {
     margin-top: 0.5rem;
 }
 
-/* Remove old steps styles */
-/*
+.tab-header {
     margin-top: 0.5rem;
+    display: flex;
+    gap: 4px;
+}
+
+.tab-btn {
+    flex: 1 1 0;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    padding: 4px 6px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 4px 4px 0 0;
+}
+
+.tab-btn.active {
     background: var(--primary);
     color: #fff;
-    border: none;
-    padding: 0.3rem 0.8rem;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 0.85rem;
+    border-color: var(--primary);
 }
 
-.steps-container {
-    margin-top: 0.5rem;
-    padding-left: 1rem;
-}
-
-.steps-container ol {
-    margin: 0;
-    padding-left: 1.2rem;
+.tab-content {
+    border: 1px solid var(--border);
+    border-top: none;
+    padding: 0.5rem 0.7rem;
+    background: var(--card-bg);
 }
 
 /* Responsive tweaks */
