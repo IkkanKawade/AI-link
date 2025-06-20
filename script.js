@@ -53,6 +53,12 @@ const projects = [
     category: "ゲーム系",
     description: "数字当てゲーム",
     url: "https://ikkankawade.github.io/number-guessing-game/"
+  },
+  {
+    title: "Shooting Game",
+    category: "ゲーム系",
+    description: "シューティングゲーム",
+    url: "https://shooting-lac.vercel.app/"
   }
 ];
 
