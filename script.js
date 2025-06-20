@@ -53,12 +53,7 @@ const projects = [
     category: "ゲーム系",
     description: "数字当てゲーム",
     url: "https://ikkankawade.github.io/number-guessing-game/",
-    steps: [
-      "企画",
-      "HTML/CSS 作成",
-      "JavaScript 実装",
-      "GitHub Pages へデプロイ"
-    ]
+    tools: ["HTML", "CSS", "JavaScript", "GitHub Pages"]
   },
   {
     title: "Shooting Game",
@@ -88,32 +83,17 @@ function createProjectCard(project) {
   card.appendChild(p);
   card.appendChild(link);
 
-  // 開発手順 (steps) toggle
-  if (project.steps && project.steps.length) {
-    const toggleBtn = document.createElement("button");
-    toggleBtn.className = "steps-toggle";
-    toggleBtn.textContent = "開発手順 ▼";
-
-    const stepsDiv = document.createElement("div");
-    stepsDiv.className = "steps-container";
-    stepsDiv.style.display = "none";
-
-    const ol = document.createElement("ol");
-    project.steps.forEach(step => {
-      const li = document.createElement("li");
-      li.textContent = step;
-      ol.appendChild(li);
+  // 使用ツール表示
+  if (project.tools && project.tools.length) {
+    const toolsDiv = document.createElement("div");
+    toolsDiv.className = "tools-list";
+    project.tools.forEach(t => {
+      const span = document.createElement("span");
+      span.className = "tool-badge";
+      span.textContent = t;
+      toolsDiv.appendChild(span);
     });
-    stepsDiv.appendChild(ol);
-
-    toggleBtn.addEventListener("click", () => {
-      const hidden = stepsDiv.style.display === "none";
-      stepsDiv.style.display = hidden ? "block" : "none";
-      toggleBtn.textContent = hidden ? "開発手順 ▲" : "開発手順 ▼";
-    });
-
-    card.appendChild(toggleBtn);
-    card.appendChild(stepsDiv);
+    card.appendChild(toolsDiv);
   }
 
   return card;
