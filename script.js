@@ -46,7 +46,7 @@ const projects = [
     title: "Nomad Morning LP",
     category: "サイト系",
     description: "海外ノマド・フリーランスのための朝活コミュニティ LP",
-    url: "https://nomad-morning-lp.windsurf.build/"
+    url: "https://nomad-moaning-lp.vercel.app/"
   },
   {
     title: "Number Guessing Game",
