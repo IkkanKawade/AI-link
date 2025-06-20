@@ -52,7 +52,13 @@ const projects = [
     title: "Number Guessing Game",
     category: "ゲーム系",
     description: "数字当てゲーム",
-    url: "https://ikkankawade.github.io/number-guessing-game/"
+    url: "https://ikkankawade.github.io/number-guessing-game/",
+    steps: [
+      "企画",
+      "HTML/CSS 作成",
+      "JavaScript 実装",
+      "GitHub Pages へデプロイ"
+    ]
   },
   {
     title: "Shooting Game",
@@ -81,6 +87,34 @@ function createProjectCard(project) {
   card.appendChild(h2);
   card.appendChild(p);
   card.appendChild(link);
+
+  // 開発手順 (steps) toggle
+  if (project.steps && project.steps.length) {
+    const toggleBtn = document.createElement("button");
+    toggleBtn.className = "steps-toggle";
+    toggleBtn.textContent = "開発手順 ▼";
+
+    const stepsDiv = document.createElement("div");
+    stepsDiv.className = "steps-container";
+    stepsDiv.style.display = "none";
+
+    const ol = document.createElement("ol");
+    project.steps.forEach(step => {
+      const li = document.createElement("li");
+      li.textContent = step;
+      ol.appendChild(li);
+    });
+    stepsDiv.appendChild(ol);
+
+    toggleBtn.addEventListener("click", () => {
+      const hidden = stepsDiv.style.display === "none";
+      stepsDiv.style.display = hidden ? "block" : "none";
+      toggleBtn.textContent = hidden ? "開発手順 ▲" : "開発手順 ▼";
+    });
+
+    card.appendChild(toggleBtn);
+    card.appendChild(stepsDiv);
+  }
 
   return card;
 }

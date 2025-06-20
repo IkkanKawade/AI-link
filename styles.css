@@ -167,6 +167,27 @@ main {
     text-decoration: underline;
 }
 
+.steps-toggle {
+    margin-top: 0.5rem;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.steps-container {
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+}
+
+.steps-container ol {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
 /* Responsive tweaks */
 @media (max-width: 600px) {
     h1 {
