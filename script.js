@@ -60,6 +60,27 @@ const projects = [
     category: "ゲーム系",
     description: "シューティングゲーム",
     url: "https://shooting-lac.vercel.app/"
+  },
+  {
+    title: "AI Auto Check Tool",
+    category: "業務効率化",
+    description: "業務チェックを自動化する AI ツール",
+    url: "https://ai-auto-checktool.vercel.app/",
+    tools: ["Next.js", "Vercel", "OpenAI API"]
+  },
+  {
+    title: "Launch Methods AI",
+    category: "Webサービス",
+    description: "AI活用のローンチ支援サービス",
+    url: "https://launch-methods-ai.vercel.app/",
+    tools: ["Next.js", "Vercel", "Stripe"]
+  },
+  {
+    title: "AI Launch くん",
+    category: "Webサービス",
+    description: "AIでスタートアップの立ち上げを支援",
+    url: "https://ai-launch-kun.com/",
+    tools: ["React", "Vercel", "LangChain"]
   }
 ];
 
