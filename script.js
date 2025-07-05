@@ -19,24 +19,83 @@
 // 1. プロジェクトデータ
 // ---------------------------------
 const projects = [
-  // サンプルデータ（必要に応じて編集してください）
   {
-    title: "ChatGPT プラグイン検索サイト",
-    url: "https://gptplugindirectory.vercel.app/",
+    title: "T78 Share House",
     category: "サイト系",
-    description: "ChatGPT プラグインをカテゴリー別に探せるサイト。"
+    description: "シェアハウス宿泊予約サイト",
+    url: "https://t78sharehouse.netlify.app/"
   },
   {
-    title: "Stable Diffusion WebUI 日本語版",
-    url: "https://github.com/ik-example/sd-webui-jp",
+    title: "Nomad X",
+    category: "サイト系",
+    description: "AI時代を見据えた次世代の海外ノマド育成スクール",
+    url: "https://nomad-x.vercel.app/"
+  },
+  {
+    title: "English Article Analyzer",
     category: "ツール系",
-    description: "画像生成 AI を日本語 UI で簡単操作。"
+    description: "英文記事を解析・翻訳するツール",
+    url: "https://english-article-analyzer-560580169825.us-west1.run.app/"
   },
   {
-    title: "AI Quiz Game",
-    url: "https://aiquizgame.netlify.app/",
+    title: "Bi-English Article Narrator & Translator",
+    category: "ツール系",
+    description: "英文記事を読み上げ・翻訳するツール",
+    url: "https://bi-english-article-narrator-translator-560580169825.us-west1.run.app/"
+  },
+  {
+    title: "Pomodoro Timer Game",
     category: "ゲーム系",
-    description: "生成系 AI が出題するクイズゲーム。"
+    description: "ゲーム感覚で時間管理するポモドーロタイマー",
+    url: "https://ikkankawade.github.io/pomodoro-timer/"
+  },
+  {
+    title: "英語パートナー (Clean UI)",
+    category: "ツール系",
+    description: "英語学習を支援する AI チューター",
+    url: "https://eigo-partner-clean.vercel.app/"
+  },
+  {
+    title: "Ikkan AI",
+    category: "サイト系",
+    description: "ポートフォリオ兼ブログサイト",
+    url: "https://www.ikkan-ai.com/"
+  },
+  {
+    title: "Nomad Morning LP",
+    category: "サイト系",
+    description: "海外ノマド・フリーランスのための朝活コミュニティ LP",
+    url: "https://nomad-moaning-lp.vercel.app/"
+  },
+  {
+    title: "Number Guessing Game",
+    category: "ゲーム系",
+    description: "数字当てゲーム",
+    url: "https://ikkankawade.github.io/number-guessing-game/"
+  },
+  {
+    title: "Shooting Game",
+    category: "ゲーム系",
+    description: "シューティングゲーム",
+    url: "https://shooting-lac.vercel.app/"
+  },
+  {
+    title: "AI Auto Check Tool",
+    category: "業務効率化",
+    description: "業務チェックを自動化する AI ツール",
+    url: "https://ai-auto-checktool.vercel.app/"
+  },
+  {
+    title: "Launch Methods AI",
+    category: "Webサービス",
+    description: "AI活用のローンチ支援サービス",
+    url: "https://launch-methods-ai.vercel.app/"
+  },
+  {
+    title: "AI Launch くん",
+    category: "Webサービス",
+    description: "AIでスタートアップの立ち上げを支援",
+    url: "https://ai-launch-kun.com/"
   }
 ];
 
